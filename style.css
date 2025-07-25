@@ -1,0 +1,78 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #e0e0e0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background-color: #0f3460;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    color: #e94560;
+}
+
+#balanceDisplay {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #53d395;
+    display: block;
+    margin-top: 10px;
+}
+
+.click-button {
+    background-color: #e94560;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.1s ease-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0 8px 15px rgba(233, 69, 96, 0.4);
+    margin-top: 30px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.click-button:active {
+    transform: translateY(3px);
+    box-shadow: 0 2px 5px rgba(233, 69, 96, 0.6);
+}
+
+.click-animation {
+    position: absolute;
+    background-color: #53d395;
+    border-radius: 50%;
+    opacity: 0;
+    animation: fadeOutUp 0.7s forwards;
+    pointer-events: none;
+}
+
+@keyframes fadeOutUp {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -150%) scale(1.5);
+    }
+}
