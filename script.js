@@ -6,7 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentBalance = 0;
     let userId = null;
     let webAppInitialized = false;
-    const BACKEND_URL = 'https://1d22675a3d41.ngrok-free.app/api';
+
+    // АКТУАЛЬНЫЙ URL ВАШЕГО БЭКЭНДА (ngrok туннель к вашему локальному app.py)
+    // НЕ ЗАБУДЬТЕ, ЧТО ЭТОТ URL МЕНЯЕТСЯ ПРИ КАЖДОМ ПЕРЕЗАПУСКЕ NGROK!
+    const BACKEND_URL = ' https://0b00f215cdc4.ngrok-free.app/api'; 
 
     if (Telegram.WebApp) {
         Telegram.WebApp.ready();
