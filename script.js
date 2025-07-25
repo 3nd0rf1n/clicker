@@ -6,14 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentBalance = 0;
     let userId = null;
     let webAppInitialized = false;
-
-    // !!! ВАЖНО: ВСТАВЬТЕ СЮДА РЕАЛЬНЫЙ, ПУБЛИЧНЫЙ, HTTPS-АДРЕС ВАШЕГО БЭКЭНДА (app.py) !!!
-    // Этот URL вы получаете от вашего хостинга (например, Heroku, Render, Vercel Functions)
-    // или от ngrok, если вы тестируете локально.
-    // ПРИМЕРЫ:
-    // Если ваш бэкэнд на Heroku: 'https://my-actual-backend-app.herokuapp.com/api'
-    // Если вы используете ngrok для локального тестирования: 'https://<ваш_ngrok_id>.ngrok-free.app/api'
-    // (где <ваш_ngrok_id> - это случайный ID, который выдает ngrok при запуске)
     const BACKEND_URL = 'https://1d22675a3d41.ngrok-free.app/api';
 
     if (Telegram.WebApp) {
